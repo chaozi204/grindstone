@@ -1,0 +1,6 @@
+##1 将 grindstone 项目导入到 github 中
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:chaozi204/grindstone.git
+git push -u origin master
