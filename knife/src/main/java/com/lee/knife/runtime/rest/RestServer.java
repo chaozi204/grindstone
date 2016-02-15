@@ -112,15 +112,4 @@ public class RestServer {
     return this.resourceConfig;
   }
 
-  /**
-   * for test start
-   *
-   * @param args
-   * @throws Exception
-   */
-  public static void main(String[] args) throws Exception {
-    RestServer server = new RestServer();
-    server.start();
-    new LOGTest().run();
-  }
 }

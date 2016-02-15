@@ -14,4 +14,15 @@ public class LOGTest {
       Thread.sleep(3000);
     }
   }
+  /**
+   * for test
+   * 通过restful的方式来修改日志级别(rest uri见: {@codeLogResource}
+   * e.g:
+   * http://xxxx:12306/logLevel/set?logName=com.lee.knife.runtime.rest.LOGTest&level=DEBUG
+   */
+  public static void main(String[] args) throws Exception {
+    RestServer server = new RestServer();
+    server.start();
+    new LOGTest().run();
+  }
 }
